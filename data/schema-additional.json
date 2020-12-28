@@ -1,0 +1,36 @@
+{
+    "reviews_by_user": {
+        "user_id1": [
+            {
+                "game_date": "20201229 09:00",
+                "rating": 5
+            },
+            {
+                "game_date": "20201229 09:00",
+                "rating": 4
+            },
+            {
+                "game_date": "20201230 09:00",
+                "rating": 2.5
+            }
+        ],
+        "user_id2": [
+            {
+                "game_date": "20201229 09:00",
+                "rating": 2
+            },
+            {
+                "game_date": "20201229 09:00",
+                "rating": 1
+            }
+        ]
+    },
+    "games_by_field": {
+        "field_id1": {
+            "games": [
+                "game_id1",
+                "game_id2"
+            ]
+        }
+    }
+}

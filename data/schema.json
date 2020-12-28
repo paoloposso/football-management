@@ -1,0 +1,149 @@
+{
+    "fields": {
+		"field_id1": {
+            "field_name": "Parc Central",
+            "location": {
+                "street": "500 Central Avenue",
+                "adress_code": "01256789"
+            },
+            "field_availability_slots": [
+                {
+                    "start": "9:00",
+                    "end": "10:00"
+                },
+                {
+                    "start": "13:00",
+                    "end": "14:00"
+                }
+            ]
+        }
+	},
+	"games": [
+		{
+            "_id": "game_id1",
+			"field_id": "field_id1",
+			"start_time": "2020-12-29T09:00",
+            "end_time": "2020-12-29T10:00",
+            "subscribed_users": [
+                "user_id1",
+                "user_id2"
+            ],
+            "reviews": [
+                {
+                    "date": "2020-12-29T12:17",
+                    "user_id": "user_id1",
+                    "comment": "Great match, well organized, well played",
+                    "rating": 4
+                },
+                {
+                    "date": "2020-12-29T12:02",
+                    "user_id": "user_id2",
+                    "comment": "Amazing match",
+                    "rating": 5
+                }
+            ]
+        },
+        {
+            "_id": "game_id2",
+			"field_id": "field_id1",
+			"start_time": "2020-12-30T09:00",
+            "end_time": "2020:12:30T10:00",
+            "subscribed_users": [
+                "user_id1",
+                "user_id3",
+                "user_id4"
+            ],
+            "reviews": [
+                {
+                    "date": "2020-12-31T12:05",
+                    "user_id": "user_id3",
+                    "comment": "Amazing match",
+                    "rating": 5
+                }
+            ]
+        },
+        {
+            "_id": "game_id3",
+			"field_id": "field_id1",
+			"start_time": "2021-01-15T09:00",
+            "end_time": "2021-01:15T10:00",
+            "subscribed_users": [
+                "user_id1"
+            ],
+            "reviews": []
+		}
+    ],
+    "users": [
+        {
+            "_id": "user_id1",
+            "name": "Paolo Posso",
+            "document": "01234567890",
+            "email": "pvictorsys@gmail.com",
+            "phone": "+55119987561258",
+            "registered": "2019-10-01"
+        },
+        {
+            "_id": "user_id2",
+            "name": "Jorge Barbosa",
+            "document": "19100000000",
+            "email": "jbarbosa@gmail.com",
+            "phone": "+55119987545678",
+            "registered": "2020-01-03"
+        },
+        {
+            "_id": "user_id3",
+            "name": "Ernando Silva",
+            "document": "01236547823",
+            "email": "esilva@gmail.com",
+            "phone": "+55119944443678",
+            "registered": "2019-12-15"
+        },
+        {
+            "_id": "user_id4",
+            "name": "Jonas Silva",
+            "document": "01277547823",
+            "email": "jsilva@gmail.com",
+            "phone": "+5511994444999",
+            "registered": "2019-12-01"
+        }
+    ],
+    "game_chats": {
+        "game_id1": {
+            "messages": [
+                {
+                    "time": "2020-12-29T14:11",
+                    "text": "Let's go",
+                    "from_user_id": "user_id2"
+                },
+                {
+                    "time": "2020-12-29T14:17",
+                    "text": "Last game I scored 6 times!",
+                    "from_user_id": "user_id1"
+                }
+            ]
+        }
+    },
+    "direct_chats": {
+        "chats": [
+            {
+                "_id": "chat_id1",
+                "users": [ 
+                    "user_id1",
+                    "user_id2"
+                 ],
+                 "messages": [
+                    {
+                        "time": "2020-12-29T14:11",
+                        "text": "Let's go",
+                        "from_user_id": "user_id2"
+                    },
+                    {
+                        "time": "2020-12-29T14:17",
+                        "text": "I'm gonna play as defender this time",
+                        "from_user_id": "user_id1"
+                    }
+                ]
+            }
+        ]
+    }
+}
