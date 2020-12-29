@@ -1,9 +1,9 @@
 const service = require('../business/fields');
 
-test('should get players by average review', async () => {
-    const fields = await service.fieldAvailability('field_id1', '2021-01-01', '2021-01-02');
+test('should get count of available game slots on field field_id1', async () => {
+    const count = await service.getFieldAvailability("field_id1", '2021-01-01', '2021-01-31');
 
-    console.log(`list of players by average review below 1 int last 5 games: ${list}`);
+    console.log(`number of available slots: ${count}`);
 
-    expect(list.length).toBe(0);
+    expect(count).not.toBe(0);
 });
